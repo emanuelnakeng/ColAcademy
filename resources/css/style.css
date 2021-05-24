@@ -1,11 +1,14 @@
 
 /* Universal styling*/
   * {
-  font-family: Roboto, sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
   box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
 }
 
 main {
@@ -60,6 +63,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.fa {
+  color: #333;
+}
+
 /*Header styling*/
 header {
   background-color: white;
@@ -105,8 +112,17 @@ header span {
   border-radius: 5px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .nav a {
+    display: none;
+  }
+  .nav .fa {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .nav .fa {
     display: none;
   }
 }
@@ -163,7 +179,7 @@ header span {
   border-radius: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .learn .image {
     width: 100%;
   }
@@ -244,7 +260,7 @@ header span {
   color: #808080;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .practise .practise-left {
     display: none;
   }
@@ -309,7 +325,7 @@ header span {
   font-weight: 400;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .container .box {
     width: 100%;
     margin-right: 0;
@@ -388,7 +404,7 @@ header span {
   width: 70%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .container2 .right {
     display: none;
   }
@@ -414,7 +430,7 @@ footer {
   padding-left: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .credits a {
     display: none;
   }
