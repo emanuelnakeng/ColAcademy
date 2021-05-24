@@ -1,0 +1,421 @@
+
+/* Universal styling*/
+  * {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  box-sizing: border-box;
+}
+
+main {
+  position: relative;
+  top: 64px;
+}
+
+/* Headings*/
+
+h2 {
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 45px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #808080;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #808080;
+}
+
+header h2 {
+  font-size: 25px;
+}
+
+a {
+  color: #808080;
+  text-decoration: none;
+  transition: text-decoration 1s ease-in 600ms;
+}
+
+a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/*Header styling*/
+header {
+  background-color: white;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #f1f1f1;
+  position: fixed;
+  top: 0;
+  padding: 0 24px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+header .logo {
+  display: flex;
+  height: 32px;
+  align-items: center;
+}
+
+.logo img {
+  height: auto;
+  width: 100%;
+}
+
+header span {
+  font-weight: 300;
+  color: grey;
+}
+
+.nav a {
+  margin: 0 16px;
+  text-decoration: none;
+  transition: background-color 550ms ease-in-out 200ms,
+  padding 300ms ease-out 200ms;
+}
+
+.nav a:hover {
+  padding: 10px 15px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav a {
+    display: none;
+  }
+}
+
+    /*main content*/
+/*Learn Section*/
+
+.learn {
+  background-color: #f1f1f1;
+  display: flex;
+  padding: 32px 24px;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.learn .image {
+  width: 60%;
+  padding-right: 12px;
+}
+
+.learn a {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  text-align: center;
+  width: 80%;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: background-color 500ms ease-in;
+}
+
+.learn a:hover {
+  background-color: #333b;
+}
+
+.learn .text {
+  width: 40%;
+  padding-left: 12px;
+}
+
+.learn .text h1 {
+  width: 80%;
+}
+
+.learn img, .practise img {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .learn .image {
+    width: 100%;
+  }
+  .learn .text {
+    width: 100%;
+    padding: 32px 16px;
+  }
+  .learn {
+    padding: 0;
+  }
+  .learn .image {
+    padding-right: 0;
+  }
+  .learn img {
+    border-radius: 0;
+  }
+}
+
+/*practise section */
+.practise {
+  background-color: white;
+  padding: 32px 24px;
+  display: flex;
+}
+
+.practise .practise-left {
+  width: 60%;
+  margin-right: 24px;
+}
+
+.practise .practise-left h2 {
+  margin: 32px 0 24px;
+}
+
+.practise .practise-left h4 {
+  width: 90%;
+}
+
+.practise .practise-left span {
+  margin: 32px 0;
+  display: block;
+}
+
+.practise .practise-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.practise-right .right-small {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+}
+
+.practise-right .right-small:hover {
+  border: 1px solid #f1f1f1;
+}
+
+.right-small .r-image {
+  width: 35%;
+}
+
+.r-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.right-small .r-text {
+  width: 65%;
+  padding: 16px;
+}
+
+.right-small .r-text p {
+  line-height: 1.5;
+  color: #808080;
+}
+
+@media only screen and (max-width: 768px) {
+  .practise .practise-left {
+    display: none;
+  }
+  .practise .practise-right {
+    width: 100%;
+  }
+  .practise {
+    padding: 32px 10;
+  }
+}
+
+/*Courses*/
+
+.courses {
+  background-color: #f1f1f1;
+  padding: 32px 72px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-content: center;
+  padding-top: 32px;
+}
+
+.container .box {
+   width: 30.33%;
+   background-color: white;
+   margin-right: 32px;
+   margin-bottom: 32px;
+   border-radius: 5px;
+   transition: box-shadow 600ms ease-in;
+}
+
+.container .box:hover {
+  box-shadow: 3px 5px 3px #e8e1e1;
+  border: 1px solid  #f1f1f1;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: block;
+  border-radius: 5px 5px 0 0;
+}
+
+.description {
+  padding: 16px 16px;
+}
+
+.description h3 {
+  margin: 8px 0;
+}
+
+.box .description h4 {
+  margin: 8px 0;
+  color: #808080;
+  width: 70%;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+  .container .box {
+    width: 100%;
+    margin-right: 0;
+  }
+  .courses {
+    padding: 32px 30px;
+  }
+}
+
+
+/*Thesis section styling*/
+.thesis {
+  background-color: white;
+  padding: 32px 24px;
+}
+
+.container2 {
+  display: flex;
+  padding-top: 32px;
+}
+
+.container2 .left {
+  width: 60%;
+  margin-right: 24px;
+}
+
+.left video {
+  border-radius: 20px;
+}
+
+.container2 .right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container2 h2 {
+  margin: 24px 0 8px;
+}
+
+.container h4 {
+  width: 95%;
+}
+
+.right .article {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+  transition: background-color 500ms ease-in-out 100ms;
+}
+
+.right .article:hover {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.small-image {
+  width: 35%;
+  margin: 16px;
+}
+
+.small-image img {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.small-text {
+  width: 65%;
+  margin: 16px;
+}
+
+.small-text h3 {
+  width: 70%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container2 .right {
+    display: none;
+  }
+  .container2 .left {
+    width: 100%;
+    margin:0;
+  }
+}
+
+/*Footer*/
+footer {
+  position: relative;
+  top: 64px;
+  height: 75px;
+  padding: 16px 24px;
+  border-top: 1px solid #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.credits a {
+  padding-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .credits a {
+    display: none;
+  }
+}
