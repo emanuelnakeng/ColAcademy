@@ -105,7 +105,7 @@ header span {
   border-radius: 5px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .nav a {
     display: none;
   }
@@ -163,7 +163,7 @@ header span {
   border-radius: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .learn .image {
     width: 100%;
   }
@@ -244,7 +244,7 @@ header span {
   color: #808080;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .practise .practise-left {
     display: none;
   }
@@ -309,7 +309,7 @@ header span {
   font-weight: 400;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .container .box {
     width: 100%;
     margin-right: 0;
@@ -388,7 +388,7 @@ header span {
   width: 70%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .container2 .right {
     display: none;
   }
@@ -414,7 +414,7 @@ footer {
   padding-left: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .credits a {
     display: none;
   }
